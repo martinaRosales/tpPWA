@@ -1,0 +1,2 @@
+Lista los integrantes del grupo y el nombre del grupo.
+Valeria y Natalia GP-Profes

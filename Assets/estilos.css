@@ -1,0 +1,80 @@
+header {
+    background-color: #e9431e;
+    width: 100%;
+  }
+  
+  body {
+    background-image: url("Assets/Img/fondo.png");
+    width: 100vw;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  footer {
+    background-color: #e9431e; 
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:fit-content;
+    width:100%;
+  }
+  
+  #navbar{
+    background-color: #e9431e;
+    color: white;
+  }
+
+  #dropdown {
+    background-color: #e9431e;
+  }
+  
+  #contIndex {
+    background-color: #f6ab9b;
+  }
+  
+  #navbarHeader a:hover {
+    background-color: #ee4d29;
+  }
+  
+  #contenedor {
+    padding-bottom: 20px;
+  }
+  
+  #carouselExampleIndicators {
+    width: 500px;
+  }
+  
+  #logo{
+    width: 100px;
+  }
+  
+  #contIndex{
+    width: 540px; 
+    height: fit-content;
+    position:relative; 
+    padding: 20px;
+    display: block;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  #imagenCarousel {
+    border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    size: 10px;
+  }
+
+  
+#titulo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: 60px;
+}
