@@ -35,3 +35,20 @@ function mostrarCategoria(id){
     infoCategoria.innerHTML = row;
 }
 
+
+/************************************ TABLA DINAMICA ************************************************/ 
+
+function cambioTabla() {
+
+  //arreglo para la categoria de cadete
+  
+  var cadete = new Array();
+  cadete[0]=('9.45','Hiro', 'M');
+  cadete[1]=('9','Sakura', 'F');
+  cadete[2]=('7.40','Kira', 'M');
+  
+  
+  
+  
+  
+}
