@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,60 @@
     <link rel="stylesheet" href="../Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/estilos.css">
     <!-- Required Core Stylesheet -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
-<!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 </head>
+
 <body>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Promocional</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="elite.html">Elite</a>
-        </li>
-
-      </ul>
-
-       <!--Pie-->
-       <footer class="page-footer font-small position-relative bottom-0">
-        <div class="container row mt-2">
-          <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
-            CONTACTO <br>
-            Whatsapp: +54 299 655 1374
-          </div>
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3 text-light col mx-0 mt-2" id="copyright">Taekwondo Poomsae
-          </div>
+    <div class="container-fluid">
+        <!-- cabecera  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <header class="d-flex justify-content-center">
+                    <h1 class="text-light">TaeKwonDo WTF - Poomsae</h1>
+                </header>
+            </div>
         </div>
-      </footer>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Promocional</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="elite.html">Elite</a>
+            </li>
+        </ul>
+        <!-- CAROUSEL-->
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">0</li>
+                <li class="glide__slide">1</li>
+                <li class="glide__slide">2</li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+          </div>
+        <!--Pie-->
+        <footer class="page-footer font-small position-relative bottom-0">
+            <div class="container row mt-2">
+                <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
+                    CONTACTO <br>
+                    Whatsapp: +54 299 655 1374
+                </div>
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 text-light col mx-0 mt-2" id="copyright">Taekwondo Poomsae
+                </div>
+            </div>
+        </footer>
     </div>
-    <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> 
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Assets/funciones.js"></script>
 </body>
+
 </html>
