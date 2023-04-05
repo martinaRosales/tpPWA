@@ -7,17 +7,22 @@
     <title>Taekwondo Poomsae</title>
     <link rel="stylesheet" href="Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/estilos.css">
+    <script type="text/javascript" src="Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="Assets/funciones.js"></script>
 </head>
 <body class="bg-dark"  onload="mostrarCategoria(0)">
     <div class="container-fluid" >
+        <!-- cabecera  -->
         <div class="row">
             <div class="col-lg-12">
                 <header class="d-flex justify-content-center">
-                    <h1 class="text-light"> Taekwondo Poomsae</h1>
+                    <h1 class="text-light">TaeKwonDo WTF - Poomsae</h1>
                  </header>
             </div>
         </div>
-        <div class="row" id="contIndex">
+
+        <!-- carrusel imagenes  -->
+      <div class="row" id="contIndex">
             <!-- carrusel de imagenes  -->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -45,25 +50,71 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-        </div>
-
+        </div> 
+      <!-- columnas 4 y 5  -->
       <div class="row" id="infoCategoria">
-        
       </div>
 
-      <div class="row">
-        <div class="col">
-            <table>
-                <!-- tabla con rankings de premiación de la categoría seleccionada -->
-            </table>
+      <br>
+       <!-- tabla y parrafo  -->  
+      <div class="row ">
+        <!-- Tabla con ranking -->
+        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-7 col-sm-8 ">
+            <table id="tablaRkng" class="table caption-top bg-dark text-light border  ">
+               <!-- <caption class="text-light fs-2">Ranking de premiación</caption> -->
+                <thead class="table-active text-light">
+                  <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Puntaje</th>
+                    <th scope="col">Equipo</th>
+                    <th scope="col">Sexo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="fila1"> 
+                    <th scope="row">1</th>
+                    <td >9,10</td>
+                    <td>Army</td>
+                    <td>-</td>
+                  </tr>
+                  <tr id="fila2">
+                    <th scope="row">2</th>
+                    <td>8,56</td>
+                    <td>Thornton</td>
+                    <td>-</td>
+                  </tr>
+                  <tr id="fila3">
+                    <th scope="row">3</th>
+                    <td>8,05</td>
+                    <td>The Birds</td>
+                    <td>-</td>
+                  </tr>
+                  <tr id="fila3">
+                    <th scope="row">4</th>
+                    <td>8</td>
+                    <td>FFFFF</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table> 
+              
         </div>
 
-        <div class="col">
-                <!-- datos del ganador y frase icónica -->
-        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-5 col-sm-4 col-a">
+          <!-- datos del ganador y frase icónica --> 
+          <div class="card text-light">
+            <div class="card-body bg-dark">
+              <h5 class="card-title">1° Nombre del Equipo (Categoria) </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rem, assumenda? Laboriosam impedit molestias, quisquam laborum saepe vero quis? 
+                Eius impedit cumque nihil itaque vitae hic similique velit sint voluptate aliquid!.</p>
+                <p>Frase Iconica: <strong>HOLI</strong></p> 
+            </div>
+         </div>
+       </div>
       </div>
-
-
+              
+      <!--Pie-->
       <footer class="page-footer font-small position-relative bottom-0">
         <div class="container row mt-2">
           <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
@@ -76,7 +127,6 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript" src="Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="Assets/funciones.js"></script>     
+        
 </body>
 </html>
