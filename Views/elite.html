@@ -69,6 +69,9 @@
               </div>
         </div>
 
+        <div id="infoImagen">
+
+        </div>
         <!--Pie-->
         <footer class="page-footer font-small position-relative bottom-0">
             <div class="container row mt-2">
@@ -84,6 +87,27 @@
     </div>
     <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Assets/funciones.js"></script>
+    <script src="../public/js/arrayInfo.js"></script>
+    <script>
+      const infoDiv = document.getElementById("infoImagen");
+    
+      const mostrarInfoImagen = (indice) => {
+        const info = infoImagenes[indice];
+        infoDiv.innerHTML = `
+          <h3>${info.titulo}</h3>
+          <p>${info.descripcion}</p>
+          <img src="${info.imagen}" class="d-block w-10" alt="...">
+        `;
+      };
+    
+      const imagenes = document.querySelectorAll("#carouselExampleControls .carousel-item img");
+      imagenes.forEach((imagen, indice) => {
+        imagen.addEventListener("click", () => {
+          mostrarInfoImagen(indice);
+        });
+      });
+    </script>
+    
 </body>
 
 </html>
