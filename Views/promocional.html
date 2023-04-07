@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- ME FALTA IMPORTAR ARCHIVOS JAJ -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +10,7 @@
     <title>Taekwondo Poomsae</title>
     <link rel="stylesheet" href="../Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/estilos.css">
-    <!-- Required Core Stylesheet -->
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-
-    <!-- Optional Theme Stylesheet -->
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="../Assets/carousel.css">
 </head>
 
 <body>
@@ -34,47 +32,133 @@
             </li>
         </ul>
         <!-- CAROUSEL-->
-        <div id="contIndex">
-            <h1>Poomsae Reconocido</h1>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div>
+            <h1 class="text-center">Poomsae Reconocido</h1>
+            <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../Assets/Img/Adultos-1-individual.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Assets/Img/Adultos-2-individual.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Assets/Img/Infantiles-A-individual.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Assets/Img/Juveniles-individual.png" class="d-block w-100" alt="...">
-                  </div>
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 1.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 2.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 3.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 4.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 5.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 6.png" alt="...">
+                            </div>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 1.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 2.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 3.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 4.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 5.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="slide 6.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-        </div>
-        <!--Pie-->
-        <footer class="page-footer font-small position-relative bottom-0">
-            <div class="container row mt-2">
-                <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
-                    CONTACTO <br>
-                    Whatsapp: +54 299 655 1374
-                </div>
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3 text-light col mx-0 mt-2" id="copyright">Taekwondo Poomsae
-                </div>
             </div>
-        </footer>
+        </div>
     </div>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!--Pie-->
+    <footer class="page-footer font-small position-relative bottom-0">
+        <div class="container row mt-2">
+            <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
+                CONTACTO <br>
+                Whatsapp: +54 299 655 1374
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 text-light col mx-0 mt-2" id="copyright">Taekwondo Poomsae
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="../Assets/jquery-3.6.4.min.js"></script>
+    <script src="../Assets/jquery-carousel.js"></script>
     <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Assets/funciones.js"></script>
 </body>

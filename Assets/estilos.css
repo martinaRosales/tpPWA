@@ -4,7 +4,7 @@ header {
   }
   
   body {
-    background-image: url("Assets/Img/fondo.png");
+    /* background-image: url("Assets/Img/fondo.png"); */
     width: 100vw;
     background-size: cover;
     min-height: 100vh;
@@ -51,7 +51,7 @@ header {
   }
   
   #contIndex{
-    width: 540px; 
+    /* width: 540px;  */
     height: fit-content;
     position:relative; 
     padding: 20px;
@@ -78,3 +78,4 @@ header {
   width: fit-content;
   height: 60px;
 }
+
