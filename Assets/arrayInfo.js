@@ -5,22 +5,22 @@ const infoImagenesElite = [
         descripcion: "Descripción de Junior"
     },
     {
-        imagen: "../Assets/Img/Elite/F-E-juvenil.png",
-        titulo: "Femenino Elite Juvenil",
+        imagen: "../Assets/Img/Elite/M-E-junior.PNG",
+        titulo: "Masculino Elite Junior",
         descripcion: "Descripción de Juvenil"
     },
     {
-        imagen: "../Assets/Img/Elite/F-E-mas30.png",
+        imagen: "../Assets/Img/Elite/F-E-cadete.png",
         titulo: "Femenino Elite Mas 30",
         descripcion: "Descripción de Mas 30"
     },
     {
-        imagen: "../Assets/Img/Elite/F-E-menos30.png",
+        imagen: "../Assets/Img/Elite/M-E-cadete.png",
         titulo: "Femenino Elite Menos 30",
         descripcion: "Descripción de Menos 30"
     },
     {
-        imagen: "../Assets/Img/Elite/M-E-junior.PNG",
+        imagen: "../Assets/Img/Elite/F-E-juvenil.png",
         titulo: "Masculino Elite Junior",
         descripcion: "Descripción de Junior"
     },
@@ -30,7 +30,7 @@ const infoImagenesElite = [
         descripcion: "Descripción de Juvenil"
     },
     {
-        imagen: "../Assets/Img/Elite/M-E-mas30.PNG",
+        imagen: "../Assets/Img/Elite/F-E-menos30.png",
         titulo: "Masculino Elite Mas 30",
         descripcion: "Descripción de Mas 30"
     },
@@ -39,6 +39,26 @@ const infoImagenesElite = [
         titulo: "Masculino Elite Menos 30",
         descripcion: "Descripción de Menos 30"
     },
+    {
+        imagen: "../Assets/Img/Elite/F-E-mas30.png",
+        titulo: "Masculino Elite Menos 30",
+        descripcion: "Descripción de Menos 30"
+    },
+    {
+        imagen: "../Assets/Img/Elite/M-E-mas30.PNG",
+        titulo: "Masculino Elite Menos 30",
+        descripcion: "Descripción de Menos 30"
+    },
+    {
+        imagen: "../Assets/Img/Elite/foto-grupal-cadete.png",
+        titulo: "Masculino Elite Menos 30",
+        descripcion: "Descripción de Menos 30"
+    },
+    {
+        imagen: "../Assets/Img/Elite/jurado-elite.png",
+        titulo: "Masculino Elite Menos 30",
+        descripcion: "Descripción de Menos 30"
+    }
 ];
 
 
