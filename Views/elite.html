@@ -42,7 +42,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/F-E-junior.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/F-E-junior.PNG" class="img-fluid" data-index="0">
                     </div>
                   </div>
                 </div>
@@ -51,7 +51,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/F-E-juvenil.png" class="img-fluid">
+                      <img src="../Assets/Img/Elite/M-E-junior.PNG" class="img-fluid" data-index="1">
                     </div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/F-E-menos30.png" class="img-fluid">
+                      <img src="../Assets/Img/Elite/F-E-cadete.png.png" class="img-fluid" data-index="2">
                     </div>
                   </div>
                 </div>
@@ -69,7 +69,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/F-E-mas30.png" class="img-fluid">
+                      <img src="../Assets/Img/Elite/M-E-cadete.png" class="img-fluid" data-index="3">
                     </div>
                   </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-junior.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/F-E-juvenil.png" class="img-fluid" data-index="4">
                     </div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid" data-index="5">
                     </div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/F-E-menos30.png" class="img-fluid" data-index="6">
                     </div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/M-E-menos30.png" class="img-fluid" data-index="7">
                     </div>
                   </div>
                 </div>
@@ -114,7 +114,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/F-E-mas30.png" class="img-fluid" data-index="8">
                     </div>
                   </div>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/M-E-mas30.PNG" class="img-fluid" data-index="9">
                     </div>
                   </div>
                 </div>
@@ -132,7 +132,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/foto-grupal-cadete.png" class="img-fluid" data-index="10">
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                      <img src="../Assets/Img/Elite/jurado-elite.png" class="img-fluid" data-index="11">
                     </div>
                   </div>
                 </div>
@@ -160,13 +160,18 @@
       </div>
     </div>
 
-
-
-    
-    <br>
-      <!-- tabla y parrafo  -->
-      <div class="row">
+    <div class="row">
+      <div id="otroDiv">
+        <!-- info de la categoria -->
+      </div id="imagenDiv">
+      <!-- foto en grande -->
+      <div>
       </div>
+    </div>
+
+    <br>
+    <!-- tabla y parrafo  -->
+    <div class="row ">
 
       <!-- Tabla con ranking -->
       <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ">
@@ -217,28 +222,8 @@
   <script type="text/javascript" src="../Assets/js/carousel.js"></script>
   <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../Assets/js/funciones.js"></script>
-  <script type="text/javascript" src="../Assets/js/tablasElite.js"></script>
-  <!-- <script type="text/javascript" src="../public/js/arrayInfo.js"></script>
-    <script>
-      const infoDiv = document.getElementById("infoImagen");
-    
-      const mostrarInfoImagen = (indice) => {
-        const info = infoImagenes[indice];
-        infoDiv.innerHTML = `
-          <h3>${info.titulo}</h3>
-          <p>${info.descripcion}</p>
-          <img src="${info.imagen}" class="d-block w-10" alt="...">
-        `;
-      };
-    
-      const imagenes = document.querySelectorAll("#carouselExampleControls .carousel-item img");
-      imagenes.forEach((imagen, indice) => {
-        imagen.addEventListener("click", () => {
-          mostrarInfoImagen(indice);
-        });
-      });
-    </script>-->
-    
+  <script type="text/javascript" src="../Assets/tablasElite.js"></script>
+
 
 
 </body>
