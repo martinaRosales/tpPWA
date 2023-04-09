@@ -127,7 +127,7 @@ function cambioTabla(indice) {
   return (tabla)
 
 }
-//document.getElementById("tablaRkng").innerHTML = cambioTabla(0);
+document.getElementById("tablaRkng").innerHTML = cambioTabla(0);
 
 
 //arreglo con parrafo de los equipos ganadores 
@@ -246,7 +246,7 @@ function mostrarTexto(indice) {
   return card
 
 }
-//document.getElementById("cardParrafo").innerHTML = mostrarTexto(indice);
+document.getElementById("cardParrafo").innerHTML = mostrarTexto(0);
 
 
 //funcion que muestra tabalas y paraffo del ganador 

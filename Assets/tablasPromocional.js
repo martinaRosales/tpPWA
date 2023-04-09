@@ -127,7 +127,7 @@ function cambioTabla(indice) {
   return (tabla)
 
 }
-//document.getElementById("tablaRkng").innerHTML = cambioTabla(0);
+document.getElementById("tablaRkng").innerHTML = cambioTabla(0);
 
 
 //arreglo con parrafo de los equipos ganadores 
@@ -229,7 +229,7 @@ arrayParrafos[8] = [winMascMas30];
 arrayParrafos[9] = [winFemMas30];
 
 function mostrarTexto(indice) {
-  var card = document.getElementById("cardParrafo").innerHTML;
+  var card = document.getElementById("cardParrafoP").innerHTML;
   var array = arrayParrafos[indice];
 
   for (let i = 0; i < array.length; i++) {
@@ -246,7 +246,7 @@ function mostrarTexto(indice) {
   return card
 
 }
-//document.getElementById("cardParrafo").innerHTML = mostrarTexto(indice);
+document.getElementById("cardParrafoP").innerHTML = mostrarTexto(0);
 
 
 //funcion que muestra tabalas y paraffo del ganador 
