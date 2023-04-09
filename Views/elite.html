@@ -7,12 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taekwondo Poomsae</title>
   <link rel="stylesheet" href="../Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../Assets/estilos.css">
-  <!-- Required Core Stylesheet -->
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-
-  <!-- Optional Theme Stylesheet -->
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="../Assets/styles/eliteStyle.css">
+  <link rel="stylesheet" href="../Assets/styles/carousel-style.css">
 </head>
 
 <body>
@@ -21,88 +17,152 @@
     <div class="row">
       <div class="col-lg-12">
         <header class="d-flex justify-content-center">
-          <h1 class="text-light">TaeKwonDo WTF - Poomsae Reconocido Equipos</h1>
+          <h1 class="text-light mt-2">TaeKwonDo WTF - Poomsae</h1>
         </header>
-      </div>
-    </div>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="promocional.html">Promocional</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Elite</a>
-      </li>
-
-    </ul>
-
-    <!-- CAROUSEL -->
-    <div id="contIndex">
-      <h1>Poomsae Elite</h1>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../Assets/Img/Adultos-1-individual.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/Img/Adultos-2-individual.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/Img/Infantiles-A-individual.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/Img/Juveniles-individual.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
     
 
-    <div id="infoImagen">
-
-    </div>
-
-    <br>
-    <!-- tabla y parrafo  -->
-    <div class="row ">
-
-      <!-- Tabla con ranking -->
-      <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ">
-        <table class="table text-center table-bordered">
-          <thead class=" table-dark text-light bg-dark border-light">
-            <tr>
-              <th scope="col">N°</th>
-              <th scope="col">Puntaje</th>
-              <th scope="col">Equipo</th>
-            </tr>
-          </thead>
-          <tbody id="tablaRkng">
-
-          </tbody>
-        </table>
-
-      </div>
-
-      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-        <!-- datos del ganador y frase icónica -->
-        <div class="card bg-light text-body">
-          <div class="card-body" id="cardParrafo">
-
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link text-light" aria-current="page" href="promocional.html">Promocional</a>
+      </li>
+      <li class="nav-item" id="selectedTab">
+        <a class="nav-link text-light" href="#">Elite</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+    <!-- CAROUSEL -->
+    <div id="contIndex">
+      <div class="container text-center">
+        <h2 class="font-weight-light text-light mb-3">Poomsae Elite</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/F-E-junior.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/F-E-juvenil.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/F-E-menos30.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/F-E-mas30.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-junior.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/Img/Elite/M-E-juvenil.PNG" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- pie -->
+
+
+    <!--Pie-->
     <footer class="page-footer font-small position-relative bottom-0">
       <div class="container row mt-2">
         <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
@@ -117,8 +177,9 @@
   </div>
 
 
+  <script type="text/javascript" src="../Assets/js/carousel.js"></script>
   <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../Assets/funciones.js"></script>
+  <script type="text/javascript" src="../Assets/js/funciones.js"></script>
   <script type="text/javascript" src="../Assets/tablasElite.js"></script>
  <!-- <script type="text/javascript" src="../public/js/arrayInfo.js"></script>
     <script>
@@ -140,6 +201,7 @@
         });
       });
     </script>-->
+    
 
 
 </body>
