@@ -79,6 +79,7 @@ var mas30F3 = [3, '8.70', 'Camel'];
 var mas30F4 = [4, '7.0', 'PPP'];
 mas30Fem = [mas30F1, mas30F2, mas30F3, mas30F4];
 
+
 //arreglo para las tablas de las diferentes categorias 
 var arrayTablas = new Array();
 
@@ -97,8 +98,7 @@ arrayTablas[7] = [menos30Masc];
 arrayTablas[8] = [mas30Fem];
 arrayTablas[9] = [mas30Masc];
 
-
-
+/*
 function crearTabla(){
   const tablaGeneral = document.getElementById("tablaProm");
   tablaGeneral.innerHTML = `<tr>
@@ -106,14 +106,14 @@ function crearTabla(){
   <th scope="col">Puntaje</th>
   <th scope="col">Equipo</th>
 </tr>`;
-}
+}*/
 
 function cambioTabla(indice) {
   var a = arrayTablas[indice];
   var tabla = document.getElementById("tablaRkng").innerHTML;
   tabla = "";
-  tabla = "";
-  crearTabla();
+  //tabla = "";
+  //crearTabla();
   for (let i = 0; i < a.length; i++) {
     for (let j = 0; j < a[i].length; j++) {
       //cuerpo de la tabla 
@@ -258,8 +258,9 @@ function mostrarTexto(indice) {
 
 }
 
-const carruselImagenes = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
-carruselImagenes.forEach(function(imagen) {
+
+  const carruselImagenes = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
+  carruselImagenes.forEach(function(imagen) {
   imagen.addEventListener('click', function() {
 
     // Obtener el índice de la imagen haciendo referencia al atributo de "data-index"
@@ -267,5 +268,6 @@ carruselImagenes.forEach(function(imagen) {
     document.getElementById("tablaRkng").innerHTML = cambioTabla(index);
     document.getElementById("cardParrafoP").innerHTML = mostrarTexto(index);
 
+    });
   });
-});
+  

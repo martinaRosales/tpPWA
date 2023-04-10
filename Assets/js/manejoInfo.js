@@ -1,8 +1,9 @@
 // Obtener todas las imágenes del carrusel
 const carrusel = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
 
-// Agregar un evento "click" a cada imagen del carrusel
-carrusel.forEach(function(imagen) {
+
+  // Agregar un evento "click" a cada imagen del carrusel
+  carrusel.forEach(function(imagen) {
   imagen.addEventListener('click', function() {
     // Obtener el índice de la imagen haciendo referencia al atributo de "data-index"
     const index = this.getAttribute('data-index');
