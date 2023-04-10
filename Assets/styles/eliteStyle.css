@@ -88,9 +88,9 @@ header {
   }
   
   @media (max-width: 767px) {
-    .row {
+    /* .row {
       flex-direction: column-reverse;
-    }
+    } */
     .text {
       text-align: center;
     }
