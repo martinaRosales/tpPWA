@@ -4,6 +4,9 @@ const carrusel = document.querySelectorAll('#recipeCarousel .carousel-item .img-
   window.addEventListener('load', function() {
     // Selecciona el primer elemento del carrusel
     localStorage.setItem("index", 0);
+
+    //Se setea el valor del boton como inactivo
+    localStorage.setItem("boton", 'off');
   
     // Llama a la función que muestra la información
     mostrarInfo()
