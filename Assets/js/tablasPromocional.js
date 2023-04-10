@@ -99,9 +99,20 @@ arrayTablas[8] = [mas30Masc];
 arrayTablas[9] = [mas30Fem];
 
 
+function crearTabla(){
+  const tablaGeneral = document.getElementById("tablaProm");
+  tablaGeneral.innerHTML = `<tr>
+  <th scope="col">N°</th>
+  <th scope="col">Puntaje</th>
+  <th scope="col">Equipo</th>
+</tr>`;
+}
+
 function cambioTabla(indice) {
   var a = arrayTablas[indice];
   var tabla = document.getElementById("tablaRkng").innerHTML;
+  tabla = "";
+  crearTabla();
   for (let i = 0; i < a.length; i++) {
     for (let j = 0; j < a[i].length; j++) {
       //cuerpo de la tabla 
@@ -127,7 +138,17 @@ function cambioTabla(indice) {
   return (tabla)
 
 }
-document.getElementById("tablaRkng").innerHTML = cambioTabla(0);
+
+const carruselImagenes = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
+carruselImagenes.forEach(function(imagen) {
+  imagen.addEventListener('click', function() {
+
+    // Obtener el índice de la imagen haciendo referencia al atributo de "data-index"
+    const index = this.getAttribute('data-index');
+    document.getElementById("tablaRkng").innerHTML = cambioTabla(index);
+  });
+});
+
 
 
 //arreglo con parrafo de los equipos ganadores 
