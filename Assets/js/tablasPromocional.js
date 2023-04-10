@@ -99,10 +99,21 @@ arrayTablas[9] = [mas30Masc];
 
 
 
+function crearTabla(){
+  const tablaGeneral = document.getElementById("tablaProm");
+  tablaGeneral.innerHTML = `<tr>
+  <th scope="col">N°</th>
+  <th scope="col">Puntaje</th>
+  <th scope="col">Equipo</th>
+</tr>`;
+}
+
 function cambioTabla(indice) {
   var a = arrayTablas[indice];
   var tabla = document.getElementById("tablaRkng").innerHTML;
   tabla = "";
+  tabla = "";
+  crearTabla();
   for (let i = 0; i < a.length; i++) {
     for (let j = 0; j < a[i].length; j++) {
       //cuerpo de la tabla 

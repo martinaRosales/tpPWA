@@ -18,7 +18,6 @@ carruselImagenes.forEach(function(imagen) {
     `;
     const imagenDiv = document.querySelector('#imagenDiv');
     imagenDiv.innerHTML = `
-      <h3>${info.titulo}</h3>
       <img src="${info.imagen}">
     `;
   });
