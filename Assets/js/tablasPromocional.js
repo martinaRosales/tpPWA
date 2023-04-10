@@ -108,8 +108,9 @@ function crearTabla(){
 </tr>`;
 }*/
 
-function cambioTabla(indice) {
-  var a = arrayTablas[indice];
+function cambioTabla() {
+  index = localStorage.getItem("index")
+  var a = arrayTablas[index];
   var tabla = document.getElementById("tablaRkng").innerHTML;
   tabla = "";
   //tabla = "";
@@ -239,9 +240,10 @@ arrayParrafos[7] = [winMascMenos30];
 arrayParrafos[8] = [winFemMas30];
 arrayParrafos[9] = [winMascMas30];
 
-function mostrarTexto(indice) {
+function mostrarTexto() {
+  index = localStorage.getItem("index");
   var card = document.getElementById("cardParrafoP").innerHTML;
-  var array = arrayParrafos[indice];
+  var array = arrayParrafos[index];
   card = "";
   for (let i = 0; i < array.length; i++) {
       var texto = '<h5 class="card-title"> 1° Puesto: ' + array[i][0] + ' </h5>';
@@ -258,16 +260,20 @@ function mostrarTexto(indice) {
 
 }
 
+window.addEventListener('load', function() {
+  // Llama a las funciones que muestran la información
+  document.getElementById("tablaRkng").innerHTML = cambioTabla();
+  document.getElementById("cardParrafoP").innerHTML = mostrarTexto();
+});
 
-  const carruselImagenes = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
-  carruselImagenes.forEach(function(imagen) {
+const carruselFotos = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
+carruselFotos.forEach(function(imagen) {
   imagen.addEventListener('click', function() {
 
-    // Obtener el índice de la imagen haciendo referencia al atributo de "data-index"
-    const index = this.getAttribute('data-index');
-    document.getElementById("tablaRkng").innerHTML = cambioTabla(index);
-    document.getElementById("cardParrafoP").innerHTML = mostrarTexto(index);
+    // Se llaman a las funciones que muestran la información
 
-    });
+    document.getElementById("tablaRkng").innerHTML = cambioTabla();
+    document.getElementById("cardParrafoP").innerHTML = mostrarTexto();
+
   });
-  
+});
