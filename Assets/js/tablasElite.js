@@ -248,8 +248,8 @@ function mostrarTexto(indice) {
 
 }
 
-const carruselImagenes = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
-carruselImagenes.forEach(function(imagen) {
+const carruselFotos = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
+carruselFotos.forEach(function(imagen) {
   imagen.addEventListener('click', function() {
 
     // Obtener el índice de la imagen haciendo referencia al atributo de "data-index"

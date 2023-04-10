@@ -60,7 +60,7 @@
                 <div class="col-md-3">
                   <div class="card">
                     <div class="img-wrapper">
-                      <img src="../Assets/Img/Elite/F-E-cadete.png.png" class="img-fluid" data-index="2">
+                      <img src="../Assets/Img/Elite/F-E-cadete.png" class="img-fluid" data-index="2">
                     </div>
                   </div>
                 </div>
@@ -161,12 +161,14 @@
     </div>
 
 
-    <div class="row text-center p-5">
-      <div id="otroDiv" class="col">
-        <!-- info de la categoria -->
-      </div>
-      <div id="imagenDiv" class="col">
-        <!-- foto en grande -->
+    <div class="containerInfo">
+      <div class="row text-center p-5">
+        <div id="otroDiv" class="col-md-6">
+          <!-- info de la categoria -->
+        </div>
+        <div id="imagenDiv" class="col-md-6">
+          <!-- foto en grande -->
+        </div>
       </div>
     </div>
 
@@ -206,14 +208,20 @@
 
 
     <!--Pie-->
-    <footer class="page-footer font-small position-relative bottom-0">
-      <div class="container row mt-2">
-        <div class="text-light col-9 ms-2 mb-2" id="infoContacto">
-          CONTACTO <br>
-          Whatsapp: +54 299 655 1374
-        </div>
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3 text-light col mx-0 mt-2" id="copyright">Taekwondo Poomsae
+    <footer class="page-footer text-light position-relative bottom-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <div class="mt-2" id="infoContacto">
+              CONTACTO <br>
+              Whatsapp: +54 299 655 1374
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-center py-3" id="copyright">
+              Taekwondo Poomsae
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -224,8 +232,8 @@
   <script type="text/javascript" src="../Assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../Assets/js/funciones.js"></script>
   <script type="text/javascript" src="../Assets/js/tablasElite.js"></script>
-  <script src="/Assets/manejoInfo.js"></script>
-  <script src="/Assets/arrayInfo.js"></script>
+  <script src="../Assets/js/manejoInfo.js"></script>
+  <script src="../Assets/js/arrayInfo.js"></script>
 
 
 </body>
