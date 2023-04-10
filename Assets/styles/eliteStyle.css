@@ -59,6 +59,16 @@ header {
     background-color: #ececec;
   }
   
+
+  #botonDinamico{
+    background-color: #000000;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+
   .containerInfo {
     max-width: 800px;
     margin: 0 auto;
