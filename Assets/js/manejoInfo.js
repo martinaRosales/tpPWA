@@ -23,3 +23,8 @@ const carrusel = document.querySelectorAll('#recipeCarousel .carousel-item .img-
     `;
   });
 });
+
+
+
+
+
