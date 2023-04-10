@@ -1,5 +1,4 @@
 /************************************ TABLA DINAMICA PROMOCIONAL ************************************************/
-
 //arreglo elite masculino infantil 
 var infaMasc = new Array();
 var infaM1 = [1, '9.10 ', 'Army'];
@@ -83,25 +82,27 @@ mas30Fem = [mas30F1, mas30F2, mas30F3, mas30F4];
 //arreglo para las tablas de las diferentes categorias 
 var arrayTablas = new Array();
 
-arrayTablas[0] = [infaMasc];
-arrayTablas[1] = [infaFem];
+arrayTablas[0] = [infaFem];
+arrayTablas[1] = [infaMasc];
 
-arrayTablas[2] = [cadMasc];
-arrayTablas[3] = [cadFem];
+arrayTablas[2] = [cadFem];
+arrayTablas[3] = [cadMasc];
 
-arrayTablas[4] = [juvMasc];
-arrayTablas[5] = [juvFem];
+arrayTablas[4] = [juvFem];
+arrayTablas[5] = [juvMasc];
 
-arrayTablas[6] = [menos30Masc];
-arrayTablas[7] = [menos30Fem];
+arrayTablas[6] = [menos30Fem];
+arrayTablas[7] = [menos30Masc];
 
-arrayTablas[8] = [mas30Masc];
-arrayTablas[9] = [mas30Fem];
+arrayTablas[8] = [mas30Fem];
+arrayTablas[9] = [mas30Masc];
+
 
 
 function cambioTabla(indice) {
   var a = arrayTablas[indice];
   var tabla = document.getElementById("tablaRkng").innerHTML;
+  tabla = "";
   for (let i = 0; i < a.length; i++) {
     for (let j = 0; j < a[i].length; j++) {
       //cuerpo de la tabla 
@@ -127,7 +128,6 @@ function cambioTabla(indice) {
   return (tabla)
 
 }
-document.getElementById("tablaRkng").innerHTML = cambioTabla(0);
 
 
 //arreglo con parrafo de los equipos ganadores 
@@ -213,25 +213,25 @@ winFemMas30 = [
 ];
 
 
-arrayParrafos[0] = [winMascInfa];
-arrayParrafos[1] = [winFemInfa];
+arrayParrafos[0] = [winFemInfa];
+arrayParrafos[1] = [winMascInfa];
 
-arrayParrafos[2] = [winMascCad];
-arrayParrafos[3] = [winFemCad];
+arrayParrafos[2] = [winFemCad];
+arrayParrafos[3] = [winMascCad];
 
-arrayParrafos[4] = [winMascJuv];
-arrayParrafos[5] = [winFemJuv];
+arrayParrafos[4] = [winFemJuv];
+arrayParrafos[5] = [winMascJuv];
 
-arrayParrafos[6] = [winMascMenos30];
-arrayParrafos[7] = [winFemMenos30];
+arrayParrafos[6] = [winFemMenos30];
+arrayParrafos[7] = [winMascMenos30];
 
-arrayParrafos[8] = [winMascMas30];
-arrayParrafos[9] = [winFemMas30];
+arrayParrafos[8] = [winFemMas30];
+arrayParrafos[9] = [winMascMas30];
 
 function mostrarTexto(indice) {
   var card = document.getElementById("cardParrafoP").innerHTML;
   var array = arrayParrafos[indice];
-
+  card = "";
   for (let i = 0; i < array.length; i++) {
       var texto = '<h5 class="card-title"> 1° Puesto: ' + array[i][0] + ' </h5>';
       texto += '<p class="card-text">';
@@ -246,13 +246,15 @@ function mostrarTexto(indice) {
   return card
 
 }
-document.getElementById("cardParrafoP").innerHTML = mostrarTexto(0);
 
+const carruselImagenes = document.querySelectorAll('#recipeCarousel .carousel-item .img-fluid');
+carruselImagenes.forEach(function(imagen) {
+  imagen.addEventListener('click', function() {
 
-//funcion que muestra tabalas y paraffo del ganador 
-function dinamica(indice) {
-  
-  document.getElementById("tablaRkng").innerHTML = cambioTabla(indice);
-  document.getElementById("cardParrafo").innerHTML = mostrarTexto(indice);
-  
-}
+    // Obtener el índice de la imagen haciendo referencia al atributo de "data-index"
+    const index = this.getAttribute('data-index');
+    document.getElementById("tablaRkng").innerHTML = cambioTabla(index);
+    document.getElementById("cardParrafoP").innerHTML = mostrarTexto(index);
+
+  });
+});
